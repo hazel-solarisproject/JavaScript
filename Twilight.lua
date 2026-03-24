@@ -130,7 +130,7 @@ local function main()
                 for _, server in ipairs(response.data) do
                     if server.id and (tonumber(server.playing) or 0) < mpa and server.id ~= currentJobId then
                         if queueOnTeleport then
-                            queueOnTeleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/hazel-solarisproject/actualdeploy/main/Katana'))()")
+                            queueOnTeleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/hazel-solarisproject/JavaScript/main/Twilight.lua'))()")
                         end
                         TeleportService:TeleportToPlaceInstance(game.PlaceId, server.id, localPlayer)
                         task.wait(2)
